@@ -1,3 +1,5 @@
+import { about } from "@/data";
+
 const About = () => {
   return (
     <section id="about">
@@ -5,15 +7,11 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center">
           {/* Image Section */}
           <div className="w-full md:w-1/2">
-            <div className="relative h-full">
-              <img
-                src="/About.png"
-                alt="About Image"
-                width={500}
-                height={400}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {about.map(({ id, img }) => (
+              <div key={id} className="relative h-full">
+                <img src={img} className="w-full h-full object-cover" />
+              </div>
+            ))}
           </div>
           {/* Content Section */}
           <div className="w-full md:w-1/2 p-6 md:p-10">

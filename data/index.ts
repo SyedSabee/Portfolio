@@ -8,6 +8,13 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+export const about = [
+  {
+    id: 1,
+    img: "/About.png",
+  },
+];
+
 export const projects = [
   {
     id: 1,
