@@ -11,7 +11,7 @@ export const navItems = [
 export const about = [
   {
     id: 1,
-    img: "/About.png",
+    img: "/about.png",
   },
 ];
 
